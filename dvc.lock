@@ -25,3 +25,40 @@ stages:
       md5: 5281daac7785fcbb78bf0f4352e6a3db.dir
       size: 868775
       nfiles: 14
+  calidad:
+    cmd: python src/calidad.py
+    deps:
+    - path: data/raw/datos_clientes.csv
+      hash: md5
+      md5: b46a5adb5c13bc3007ad2dfe45e58430
+      size: 438782
+    - path: data/raw/datos_resenas.csv
+      hash: md5
+      md5: e3ec9eeddaab38eea998b348bcd17d94
+      size: 4465568
+    - path: pyproject.toml
+      hash: md5
+      md5: 44dfa13d13700cdd587a33b270bc0324
+      size: 747
+    - path: src/calidad.py
+      hash: md5
+      md5: 137737e71e63b8f377350c8049403e7e
+      size: 5325
+    - path: src/esquemas.py
+      hash: md5
+      md5: ae9c257aa61ce21d489ccd0a43a6a872
+      size: 3318
+    - path: tests/test_calidad.py
+      hash: md5
+      md5: 576c5321380f9e011bc2c495f50b6524
+      size: 3544
+    - path: uv.lock
+      hash: md5
+      md5: a2e416069b4de906f5037e630aa17054
+      size: 1017248
+    outs:
+    - path: docs/reports/calidad
+      hash: md5
+      md5: 1391933a0bba6835795632c7dcd87c68.dir
+      size: 63439
+      nfiles: 3

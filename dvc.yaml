@@ -8,3 +8,15 @@ stages:
     - src/exploracion.py
     outs:
     - docs/figures
+  calidad:
+    cmd: python src/calidad.py
+    deps:
+    - data/raw/datos_clientes.csv
+    - data/raw/datos_resenas.csv
+    - pyproject.toml
+    - src/calidad.py
+    - src/esquemas.py
+    - tests/test_calidad.py
+    - uv.lock
+    outs:
+    - docs/reports/calidad
