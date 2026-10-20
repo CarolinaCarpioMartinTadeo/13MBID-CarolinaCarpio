@@ -42,6 +42,35 @@ def seleccionar_datos(clientes, resenas):
     )
 
 
+def limpiar_datos(clientes, resenas):
+    clientes = clientes.copy()
+    resenas = resenas.copy()
+
+    duplicados = int(resenas.duplicated().sum())
+    resenas = resenas.drop_duplicates().reset_index(drop=True)
+
+    edades_fuera = (
+        clientes["edad"].notna()
+        & ~clientes["edad"].between(18, 79)
+    )
+    clientes.loc[edades_fuera, "edad"] = float("nan")
+
+    print("\n--- Limpieza inicial (C2) ---")
+    print(f"Reseñas duplicadas eliminadas: {duplicados}")
+    print(
+        "Edades fuera de dominio convertidas en ausentes:",
+        int(edades_fuera.sum()),
+    )
+    print(f"Clientes conservados: {len(clientes)}")
+    print(f"Reseñas conservadas: {len(resenas)}")
+    print("Edades pendientes de imputar:", int(clientes["edad"].isna().sum()))
+    print(
+        "Tiempos de respuesta pendientes de imputar:",
+        int(resenas["tiempo_respuesta_horas"].isna().sum()),
+    )
+    return clientes, resenas
+
+
 def main():
     clientes = pd.read_csv(
         RAIZ / "data" / "raw" / "datos_clientes.csv", sep=";",
@@ -58,6 +87,7 @@ def main():
     coincidencia = etiqueta_por_calificacion.eq(resenas[OBJETIVO]).mean() * 100
     print(f"Coincidencia entre calificación y sentimiento: {coincidencia:.2f} %")
 
+    clientes, resenas = limpiar_datos(clientes, resenas)
     clientes_seleccionados, resenas_seleccionadas = seleccionar_datos(
         clientes, resenas,
     )
