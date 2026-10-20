@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  exploracion:
+    cmd: python src/exploracion.py
+    deps:
+    - path: data/raw/datos_clientes.csv
+      hash: md5
+      md5: b46a5adb5c13bc3007ad2dfe45e58430
+      size: 438782
+    - path: data/raw/datos_resenas.csv
+      hash: md5
+      md5: e3ec9eeddaab38eea998b348bcd17d94
+      size: 4465568
+    - path: pyproject.toml
+      hash: md5
+      md5: 44dfa13d13700cdd587a33b270bc0324
+      size: 747
+    - path: src/exploracion.py
+      hash: md5
+      md5: 88df10e15a3e123416562a329b340d75
+      size: 8329
+    outs:
+    - path: docs/figures
+      hash: md5
+      md5: 5281daac7785fcbb78bf0f4352e6a3db.dir
+      size: 868775
+      nfiles: 14

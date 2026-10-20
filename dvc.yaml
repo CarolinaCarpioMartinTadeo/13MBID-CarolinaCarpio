@@ -1,0 +1,10 @@
+stages:
+  exploracion:
+    cmd: python src/exploracion.py
+    deps:
+    - data/raw/datos_clientes.csv
+    - data/raw/datos_resenas.csv
+    - pyproject.toml
+    - src/exploracion.py
+    outs:
+    - docs/figures
