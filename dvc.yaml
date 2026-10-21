@@ -20,3 +20,17 @@ stages:
     - uv.lock
     outs:
     - docs/reports/calidad
+  preparacion:
+    cmd: python src/preparacion.py
+    deps:
+    - data/raw/datos_clientes.csv
+    - data/raw/datos_resenas.csv
+    - pyproject.toml
+    - src/esquemas.py
+    - src/imputacion.py
+    - src/integracion.py
+    - src/preparacion.py
+    - uv.lock
+    outs:
+    - data/processed/preparacion
+    - docs/reports/preparacion

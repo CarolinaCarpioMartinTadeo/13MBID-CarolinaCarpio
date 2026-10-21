@@ -62,3 +62,49 @@ stages:
       md5: 1391933a0bba6835795632c7dcd87c68.dir
       size: 63439
       nfiles: 3
+  preparacion:
+    cmd: python src/preparacion.py
+    deps:
+    - path: data/raw/datos_clientes.csv
+      hash: md5
+      md5: b46a5adb5c13bc3007ad2dfe45e58430
+      size: 438782
+    - path: data/raw/datos_resenas.csv
+      hash: md5
+      md5: e3ec9eeddaab38eea998b348bcd17d94
+      size: 4465568
+    - path: pyproject.toml
+      hash: md5
+      md5: 44dfa13d13700cdd587a33b270bc0324
+      size: 747
+    - path: src/esquemas.py
+      hash: md5
+      md5: ae9c257aa61ce21d489ccd0a43a6a872
+      size: 3318
+    - path: src/imputacion.py
+      hash: md5
+      md5: eb850ba51cd7aaee1e9cbf34e6a63af7
+      size: 4472
+    - path: src/integracion.py
+      hash: md5
+      md5: 54972714be059b4f86a3a1ca5916c5b3
+      size: 3441
+    - path: src/preparacion.py
+      hash: md5
+      md5: b2e437475b5fc974b414f8d035597e37
+      size: 8347
+    - path: uv.lock
+      hash: md5
+      md5: a2e416069b4de906f5037e630aa17054
+      size: 1017248
+    outs:
+    - path: data/processed/preparacion
+      hash: md5
+      md5: 2317bb63c03c7332f6d4ee6b5e7e521b.dir
+      size: 12461145
+      nfiles: 2
+    - path: docs/reports/preparacion
+      hash: md5
+      md5: be39ce545b512d625546ec93b76c370b.dir
+      size: 2480
+      nfiles: 1
