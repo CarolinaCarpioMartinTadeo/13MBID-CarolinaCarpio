@@ -79,7 +79,7 @@
           "desviacion": 0.00010310116196193178
         }
       },
-      "mlflow_run_id": "8e96af36c1654c62b5463691e6a4ecfd"
+      "mlflow_run_id": "c4b4151cf7874a278edbc84063b6c6d3"
     },
     {
       "modelo": "LogisticRegression",
@@ -153,7 +153,7 @@
           "desviacion": 0.002142445054775932
         }
       },
-      "mlflow_run_id": "244b4f6fab0c42e3a4b0a2e1515e5e34"
+      "mlflow_run_id": "fb09c2a037324dbbb3cfad47c15ebd9a"
     },
     {
       "modelo": "LinearSVC",
@@ -225,7 +225,7 @@
           "desviacion": 0.0013180711932573646
         }
       },
-      "mlflow_run_id": "d17436236a5145d584516bcda63eba6d"
+      "mlflow_run_id": "c0608f7d96f54fe1ae0c528f7a17aba9"
     },
     {
       "modelo": "KNeighborsClassifier",
@@ -293,7 +293,7 @@
           "desviacion": 0.0026907076094775544
         }
       },
-      "mlflow_run_id": "1817653034b34545bed14dca14ffbe5f"
+      "mlflow_run_id": "7f73e8df26734eaab2a58f35676f7aec"
     },
     {
       "modelo": "DecisionTreeClassifier",
@@ -366,7 +366,7 @@
           "desviacion": 0.003406415108812998
         }
       },
-      "mlflow_run_id": "d687f81f06ff4dc28c5004ee3b4c2e31"
+      "mlflow_run_id": "6a7699489ac7464081124af5af0dd37e"
     }
   ]
 }

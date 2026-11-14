@@ -134,7 +134,7 @@ stages:
     outs:
     - path: docs/reports/entrenamiento
       hash: md5
-      md5: 00c6c785cdaa2277dd81f1fc0a8fa085.dir
+      md5: ba5417c7eed8f4b11a8dd649f0e7831d.dir
       size: 44019
       nfiles: 2
     - path: models/modelo.joblib
@@ -150,7 +150,7 @@ stages:
       size: 6222115
     - path: docs/reports/entrenamiento/metricas_modelo.json
       hash: md5
-      md5: a333a53778952f524d16161b60051ccf
+      md5: c0904b93f2c2fed0646b0f7799238d09
       size: 2931
     - path: models/modelo.joblib
       hash: md5
