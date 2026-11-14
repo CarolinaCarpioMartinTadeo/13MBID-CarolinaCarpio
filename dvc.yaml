@@ -34,3 +34,25 @@ stages:
     outs:
     - data/processed/preparacion
     - docs/reports/preparacion
+  entrenamiento:
+    cmd: python -m src.entrenamiento
+    deps:
+    - data/processed/preparacion/datos_sin_imputar.csv
+    - pyproject.toml
+    - src/entrenamiento.py
+    - src/experimentacion.py
+    - uv.lock
+    outs:
+    - docs/reports/entrenamiento:
+        cache: false
+    - models/modelo.joblib:
+        cache: false
+  pruebas_modelo:
+    cmd: python -m pytest -q tests/test_modelo.py
+    deps:
+    - data/processed/preparacion/datos_sin_imputar.csv
+    - docs/reports/entrenamiento/metricas_modelo.json
+    - models/modelo.joblib
+    - src/entrenamiento.py
+    - src/experimentacion.py
+    - tests/test_modelo.py

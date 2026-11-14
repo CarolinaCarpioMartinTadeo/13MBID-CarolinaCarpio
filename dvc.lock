@@ -108,3 +108,63 @@ stages:
       md5: be39ce545b512d625546ec93b76c370b.dir
       size: 2480
       nfiles: 1
+  entrenamiento:
+    cmd: python -m src.entrenamiento
+    deps:
+    - path: data/processed/preparacion/datos_sin_imputar.csv
+      hash: md5
+      md5: 9c83945ff0b0e7c63f3d54bf82f6317e
+      size: 6222115
+    - path: pyproject.toml
+      hash: md5
+      md5: 44dfa13d13700cdd587a33b270bc0324
+      size: 747
+    - path: src/entrenamiento.py
+      hash: md5
+      md5: fbfa625c6b0456e583135f537fcb6732
+      size: 8012
+    - path: src/experimentacion.py
+      hash: md5
+      md5: 33c3fd06b6810d8d1dec3327546686c3
+      size: 9658
+    - path: uv.lock
+      hash: md5
+      md5: a2e416069b4de906f5037e630aa17054
+      size: 1017248
+    outs:
+    - path: docs/reports/entrenamiento
+      hash: md5
+      md5: ba5417c7eed8f4b11a8dd649f0e7831d.dir
+      size: 44019
+      nfiles: 2
+    - path: models/modelo.joblib
+      hash: md5
+      md5: 1145de874c26872b2c0f27379d0ae00e
+      size: 8851
+  pruebas_modelo:
+    cmd: python -m pytest -q tests/test_modelo.py
+    deps:
+    - path: data/processed/preparacion/datos_sin_imputar.csv
+      hash: md5
+      md5: 9c83945ff0b0e7c63f3d54bf82f6317e
+      size: 6222115
+    - path: docs/reports/entrenamiento/metricas_modelo.json
+      hash: md5
+      md5: c0904b93f2c2fed0646b0f7799238d09
+      size: 2931
+    - path: models/modelo.joblib
+      hash: md5
+      md5: 1145de874c26872b2c0f27379d0ae00e
+      size: 8851
+    - path: src/entrenamiento.py
+      hash: md5
+      md5: fbfa625c6b0456e583135f537fcb6732
+      size: 8012
+    - path: src/experimentacion.py
+      hash: md5
+      md5: 33c3fd06b6810d8d1dec3327546686c3
+      size: 9658
+    - path: tests/test_modelo.py
+      hash: md5
+      md5: 32930ddb0d59c6e95df89e51d7f7212e
+      size: 3348
