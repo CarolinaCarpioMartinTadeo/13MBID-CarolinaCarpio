@@ -1,0 +1,372 @@
+{
+  "datos": "data/processed/preparacion/datos_sin_imputar.csv",
+  "particiones_ap1": {
+    "entrenamiento": 17550,
+    "validacion": 4950,
+    "prueba": 2500
+  },
+  "clases_en_entrenamiento": {
+    "Negativo": 3137,
+    "Neutral": 3086,
+    "Positivo": 11327
+  },
+  "pliegues": 5,
+  "semilla": 42,
+  "terminos_tfidf_max": 300,
+  "versiones": {
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1"
+  },
+  "modelos": [
+    {
+      "modelo": "DummyClassifier",
+      "parametros": {
+        "constant": null,
+        "random_state": null,
+        "strategy": "most_frequent"
+      },
+      "cv": {
+        "accuracy": {
+          "media": 0.6454131054131054,
+          "desviacion": 0.00013957206511583197
+        },
+        "precision_macro": {
+          "media": 0.21513770180436848,
+          "desviacion": 4.6524021705268256e-05
+        },
+        "precision_negativo": {
+          "media": 0.0,
+          "desviacion": 0.0
+        },
+        "precision_neutral": {
+          "media": 0.0,
+          "desviacion": 0.0
+        },
+        "precision_positivo": {
+          "media": 0.6454131054131054,
+          "desviacion": 0.00013957206511583197
+        },
+        "recall_macro": {
+          "media": 0.3333333333333333,
+          "desviacion": 0.0
+        },
+        "recall_negativo": {
+          "media": 0.0,
+          "desviacion": 0.0
+        },
+        "recall_neutral": {
+          "media": 0.0,
+          "desviacion": 0.0
+        },
+        "recall_positivo": {
+          "media": 1.0,
+          "desviacion": 0.0
+        },
+        "f1_macro": {
+          "media": 0.2614999220539386,
+          "desviacion": 3.436705398731966e-05
+        },
+        "f1_negativo": {
+          "media": 0.0,
+          "desviacion": 0.0
+        },
+        "f1_neutral": {
+          "media": 0.0,
+          "desviacion": 0.0
+        },
+        "f1_positivo": {
+          "media": 0.784499766161816,
+          "desviacion": 0.00010310116196193178
+        }
+      },
+      "mlflow_run_id": "8e96af36c1654c62b5463691e6a4ecfd"
+    },
+    {
+      "modelo": "LogisticRegression",
+      "parametros": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "cv": {
+        "accuracy": {
+          "media": 0.8650142450142451,
+          "desviacion": 0.004273124389573238
+        },
+        "precision_macro": {
+          "media": 0.8165403628926846,
+          "desviacion": 0.006281645682509593
+        },
+        "precision_negativo": {
+          "media": 0.8884536792292099,
+          "desviacion": 0.008967623034502176
+        },
+        "precision_neutral": {
+          "media": 0.5924862419802325,
+          "desviacion": 0.00834133203380368
+        },
+        "precision_positivo": {
+          "media": 0.9686811674686121,
+          "desviacion": 0.00450367857143688
+        },
+        "recall_macro": {
+          "media": 0.8601075402839162,
+          "desviacion": 0.008043117827078757
+        },
+        "recall_negativo": {
+          "media": 0.9139284226780037,
+          "desviacion": 0.010925060098387517
+        },
+        "recall_neutral": {
+          "media": 0.7961721032451627,
+          "desviacion": 0.022267507971605486
+        },
+        "recall_positivo": {
+          "media": 0.8702220949285826,
+          "desviacion": 0.0037488545488450972
+        },
+        "f1_macro": {
+          "media": 0.8323631013444214,
+          "desviacion": 0.006737994565112509
+        },
+        "f1_negativo": {
+          "media": 0.9009966545867343,
+          "desviacion": 0.009295474957652254
+        },
+        "f1_neutral": {
+          "media": 0.679290198164815,
+          "desviacion": 0.01179614149134889
+        },
+        "f1_positivo": {
+          "media": 0.9168024512817154,
+          "desviacion": 0.002142445054775932
+        }
+      },
+      "mlflow_run_id": "244b4f6fab0c42e3a4b0a2e1515e5e34"
+    },
+    {
+      "modelo": "LinearSVC",
+      "parametros": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": "auto",
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "loss": "squared_hinge",
+        "max_iter": 5000,
+        "multi_class": "ovr",
+        "penalty": "l2",
+        "random_state": 42,
+        "tol": 0.0001,
+        "verbose": 0
+      },
+      "cv": {
+        "accuracy": {
+          "media": 0.8665527065527066,
+          "desviacion": 0.002869442350316632
+        },
+        "precision_macro": {
+          "media": 0.8183538211752113,
+          "desviacion": 0.004798396866124315
+        },
+        "precision_negativo": {
+          "media": 0.8880142471823218,
+          "desviacion": 0.00808152515010755
+        },
+        "precision_neutral": {
+          "media": 0.593830164088527,
+          "desviacion": 0.005302827574030647
+        },
+        "precision_positivo": {
+          "media": 0.9732170522547852,
+          "desviacion": 0.004444310788852535
+        },
+        "recall_macro": {
+          "media": 0.8648911358246485,
+          "desviacion": 0.0067597382121611935
+        },
+        "recall_negativo": {
+          "media": 0.917436178750292,
+          "desviacion": 0.00828627946453965
+        },
+        "recall_neutral": {
+          "media": 0.8091338714837951,
+          "desviacion": 0.021349618411541586
+        },
+        "recall_positivo": {
+          "media": 0.8681033572398583,
+          "desviacion": 0.004265093515737219
+        },
+        "f1_macro": {
+          "media": 0.8349903546149303,
+          "desviacion": 0.005123953838532993
+        },
+        "f1_negativo": {
+          "media": 0.9024783565777165,
+          "desviacion": 0.007780806781953769
+        },
+        "f1_neutral": {
+          "media": 0.6848515978387455,
+          "desviacion": 0.00926310247801396
+        },
+        "f1_positivo": {
+          "media": 0.9176411094283292,
+          "desviacion": 0.0013180711932573646
+        }
+      },
+      "mlflow_run_id": "d17436236a5145d584516bcda63eba6d"
+    },
+    {
+      "modelo": "KNeighborsClassifier",
+      "parametros": {
+        "algorithm": "auto",
+        "leaf_size": 30,
+        "metric": "minkowski",
+        "metric_params": null,
+        "n_jobs": null,
+        "n_neighbors": 5,
+        "p": 2,
+        "weights": "uniform"
+      },
+      "cv": {
+        "accuracy": {
+          "media": 0.6976068376068376,
+          "desviacion": 0.003071642614687992
+        },
+        "precision_macro": {
+          "media": 0.602690900904409,
+          "desviacion": 0.003328899240851107
+        },
+        "precision_negativo": {
+          "media": 0.6903212661299756,
+          "desviacion": 0.019124044936578127
+        },
+        "precision_neutral": {
+          "media": 0.381588116129176,
+          "desviacion": 0.01696220510289532
+        },
+        "precision_positivo": {
+          "media": 0.7361633204540753,
+          "desviacion": 0.0033388234643984527
+        },
+        "recall_macro": {
+          "media": 0.5256388679330847,
+          "desviacion": 0.005275281122211729
+        },
+        "recall_negativo": {
+          "media": 0.4835730757118622,
+          "desviacion": 0.018887267580427112
+        },
+        "recall_neutral": {
+          "media": 0.20122683618930726,
+          "desviacion": 0.0201787617203916
+        },
+        "recall_positivo": {
+          "media": 0.8921166918980845,
+          "desviacion": 0.006422904810705009
+        },
+        "f1_macro": {
+          "media": 0.5461509565724061,
+          "desviacion": 0.005777558321847023
+        },
+        "f1_negativo": {
+          "media": 0.568695699332494,
+          "desviacion": 0.019219069636090446
+        },
+        "f1_neutral": {
+          "media": 0.2631044611215153,
+          "desviacion": 0.020644383350269586
+        },
+        "f1_positivo": {
+          "media": 0.8066527092632091,
+          "desviacion": 0.0026907076094775544
+        }
+      },
+      "mlflow_run_id": "1817653034b34545bed14dca14ffbe5f"
+    },
+    {
+      "modelo": "DecisionTreeClassifier",
+      "parametros": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 42,
+        "splitter": "best"
+      },
+      "cv": {
+        "accuracy": {
+          "media": 0.808034188034188,
+          "desviacion": 0.004509711438725768
+        },
+        "precision_macro": {
+          "media": 0.7401140666213335,
+          "desviacion": 0.004645168333943238
+        },
+        "precision_negativo": {
+          "media": 0.8442597380391504,
+          "desviacion": 0.01057257977018461
+        },
+        "precision_neutral": {
+          "media": 0.4898923308408942,
+          "desviacion": 0.010006613737954332
+        },
+        "precision_positivo": {
+          "media": 0.8861901309839558,
+          "desviacion": 0.0044666573061280055
+        },
+        "recall_macro": {
+          "media": 0.7403880925110068,
+          "desviacion": 0.005522145230595781
+        },
+        "recall_negativo": {
+          "media": 0.8412422921809446,
+          "desviacion": 0.0159069522942581
+        },
+        "recall_neutral": {
+          "media": 0.4961039165394722,
+          "desviacion": 0.01683768321870857
+        },
+        "recall_positivo": {
+          "media": 0.8838180688126037,
+          "desviacion": 0.005622178590005761
+        },
+        "f1_macro": {
+          "media": 0.7401382278977802,
+          "desviacion": 0.0050277805985618615
+        },
+        "f1_negativo": {
+          "media": 0.8426821396118249,
+          "desviacion": 0.01128873936088349
+        },
+        "f1_neutral": {
+          "media": 0.4927459991136815,
+          "desviacion": 0.008616688219723681
+        },
+        "f1_positivo": {
+          "media": 0.8849865449678342,
+          "desviacion": 0.003406415108812998
+        }
+      },
+      "mlflow_run_id": "d687f81f06ff4dc28c5004ee3b4c2e31"
+    }
+  ]
+}
