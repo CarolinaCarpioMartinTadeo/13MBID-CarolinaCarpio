@@ -1,0 +1,246 @@
+{
+  "calidad_referencia": {
+    "filas": 17550,
+    "nulos_por_columna": {
+      "tiempo_respuesta_horas": 528,
+      "edad": 483,
+      "tiempo_respuesta_dias": 528
+    },
+    "filas_duplicadas": 0
+  },
+  "calidad_nuevo": {
+    "filas": 1000,
+    "nulos_por_columna": {},
+    "filas_duplicadas": 0
+  },
+  "variables": {
+    "importe_compra": {
+      "tipo": "numerica",
+      "media_ref": 23786.158,
+      "media_nuevo": 23751.355,
+      "mediana_ref": 21221.735,
+      "mediana_nuevo": 21534.075,
+      "ks_estadistico": 0.0219,
+      "ks_pvalor": 0.747128288891711,
+      "psi": 0.0062,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "tiempo_respuesta_horas": {
+      "tipo": "numerica",
+      "media_ref": 13.464,
+      "media_nuevo": 13.357,
+      "mediana_ref": 10.9,
+      "mediana_nuevo": 10.85,
+      "ks_estadistico": 0.0158,
+      "ks_pvalor": 0.9685275500879271,
+      "psi": 0.0061,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "edad": {
+      "tipo": "numerica",
+      "media_ref": 37.808,
+      "media_nuevo": 37.719,
+      "mediana_ref": 38.0,
+      "mediana_nuevo": 38.0,
+      "ks_estadistico": 0.0217,
+      "ks_pvalor": 0.7590133149469256,
+      "psi": 0.0188,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "antiguedad_cliente_meses": {
+      "tipo": "numerica",
+      "media_ref": 47.73,
+      "media_nuevo": 46.722,
+      "mediana_ref": 48.0,
+      "mediana_nuevo": 48.0,
+      "ks_estadistico": 0.0303,
+      "ks_pvalor": 0.34433152430201186,
+      "psi": 0.0101,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "categoria_producto": {
+      "tipo": "categorica",
+      "proporciones_ref": {
+        "Alimentos": 0.1218,
+        "Belleza": 0.1247,
+        "Calzado": 0.1261,
+        "Deportes": 0.1255,
+        "Electrónica": 0.127,
+        "Hogar": 0.1232,
+        "Indumentaria": 0.1238,
+        "Libros": 0.1279
+      },
+      "proporciones_nuevo": {
+        "Alimentos": 0.132,
+        "Belleza": 0.128,
+        "Calzado": 0.118,
+        "Deportes": 0.124,
+        "Electrónica": 0.11,
+        "Hogar": 0.137,
+        "Indumentaria": 0.135,
+        "Libros": 0.116
+      },
+      "categorias_nuevas": [],
+      "chi2_pvalor": 0.38660207679562497,
+      "psi": 0.0075,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "canal_compra": {
+      "tipo": "categorica",
+      "proporciones_ref": {
+        "Offline": 0.2081,
+        "Online": 0.7919
+      },
+      "proporciones_nuevo": {
+        "Offline": 0.195,
+        "Online": 0.805
+      },
+      "categorias_nuevas": [],
+      "chi2_pvalor": 0.3057724767166982,
+      "psi": 0.0011,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "plataforma": {
+      "tipo": "categorica",
+      "proporciones_ref": {
+        "Amazon": 0.1231,
+        "Falabella": 0.1224,
+        "Flipkart": 0.1287,
+        "JioMart": 0.1281,
+        "Meesho": 0.1252,
+        "MercadoLibre": 0.1225,
+        "Nykaa": 0.1247,
+        "Zepto": 0.1252
+      },
+      "proporciones_nuevo": {
+        "Amazon": 0.128,
+        "Falabella": 0.127,
+        "Flipkart": 0.12,
+        "JioMart": 0.116,
+        "Meesho": 0.129,
+        "MercadoLibre": 0.137,
+        "Nykaa": 0.125,
+        "Zepto": 0.118
+      },
+      "categorias_nuevas": [],
+      "chi2_pvalor": 0.7373464467525725,
+      "psi": 0.0043,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "genero": {
+      "tipo": "categorica",
+      "proporciones_ref": {
+        "Femenino": 0.5015,
+        "Masculino": 0.4703,
+        "Otro": 0.0282
+      },
+      "proporciones_nuevo": {
+        "Femenino": 0.501,
+        "Masculino": 0.47,
+        "Otro": 0.029
+      },
+      "categorias_nuevas": [],
+      "chi2_pvalor": 0.9885071311453678,
+      "psi": 0.0,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "problema_resuelto": {
+      "tipo": "categorica",
+      "proporciones_ref": {
+        "No": 0.1505,
+        "Sí": 0.8495
+      },
+      "proporciones_nuevo": {
+        "No": 0.151,
+        "Sí": 0.849
+      },
+      "categorias_nuevas": [],
+      "chi2_pvalor": 0.9636227686310601,
+      "psi": 0.0,
+      "nivel_psi": "estable",
+      "deriva": false
+    },
+    "reclamo_formal": {
+      "tipo": "categorica",
+      "proporciones_ref": {
+        "No": 0.9091,
+        "Sí": 0.0909
+      },
+      "proporciones_nuevo": {
+        "No": 0.917,
+        "Sí": 0.083
+      },
+      "categorias_nuevas": [],
+      "chi2_pvalor": 0.38579836541427437,
+      "psi": 0.0008,
+      "nivel_psi": "estable",
+      "deriva": false
+    }
+  },
+  "distribucion_objetivo": {
+    "tipo": "categorica",
+    "proporciones_ref": {
+      "Negativo": 0.1787,
+      "Neutral": 0.1758,
+      "Positivo": 0.6454
+    },
+    "proporciones_nuevo": {
+      "Negativo": 0.171,
+      "Neutral": 0.169,
+      "Positivo": 0.66
+    },
+    "categorias_nuevas": [],
+    "chi2_pvalor": 0.6276665957136243,
+    "psi": 0.0009,
+    "nivel_psi": "estable",
+    "deriva": false
+  },
+  "resumen": {
+    "variables_con_deriva": [],
+    "variables_criticas_con_deriva": [],
+    "deriva_en_objetivo": false,
+    "recomendacion": "No se detectaron alertas con los criterios definidos.",
+    "alertas": []
+  },
+  "entradas": {
+    "referencia": "data/processed/preparacion/datos_sin_imputar.csv",
+    "particion_referencia": "entrenamiento",
+    "lote": "data/raw/resenas_nuevas.csv",
+    "modelo": "models/modelo.joblib",
+    "metricas_modelo": "docs/reports/entrenamiento/metricas_modelo.json",
+    "mlflow_run_id": "6a913c0020e344b28f87d42c575834ba"
+  },
+  "distribucion_predicciones": {
+    "tipo": "categorica",
+    "proporciones_ref": {
+      "Negativo": 0.1846,
+      "Neutral": 0.2368,
+      "Positivo": 0.5787
+    },
+    "proporciones_nuevo": {
+      "Negativo": 0.172,
+      "Neutral": 0.238,
+      "Positivo": 0.59
+    },
+    "categorias_nuevas": [],
+    "chi2_pvalor": 0.5821110309403543,
+    "psi": 0.0011,
+    "nivel_psi": "estable",
+    "deriva": false
+  },
+  "rendimiento_lote": {
+    "n_etiquetadas": 1000,
+    "accuracy": 0.856,
+    "umbral": 0.8,
+    "cumple_umbral": true,
+    "accuracy_prueba_modelo": 0.8744
+  }
+}
