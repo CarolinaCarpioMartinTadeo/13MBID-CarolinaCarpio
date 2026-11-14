@@ -56,3 +56,20 @@ stages:
     - src/entrenamiento.py
     - src/experimentacion.py
     - tests/test_modelo.py
+  monitoreo:
+    cmd: python -m src.monitoreo_ap2
+    deps:
+    - data/processed/preparacion/datos_sin_imputar.csv
+    - data/raw/resenas_nuevas.csv
+    - data/raw/resenas_nuevas_drift.csv
+    - docs/reports/entrenamiento/metricas_modelo.json
+    - models/modelo.joblib
+    - pyproject.toml
+    - src/entrenamiento.py
+    - src/experimentacion.py
+    - src/monitoreo_ap2.py
+    - src/monitoreo_drift.py
+    - uv.lock
+    outs:
+    - docs/reports/monitoreo:
+        cache: false

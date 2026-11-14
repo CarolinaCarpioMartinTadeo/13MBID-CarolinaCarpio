@@ -168,3 +168,56 @@ stages:
       hash: md5
       md5: 32930ddb0d59c6e95df89e51d7f7212e
       size: 3348
+  monitoreo:
+    cmd: python -m src.monitoreo_ap2
+    deps:
+    - path: data/processed/preparacion/datos_sin_imputar.csv
+      hash: md5
+      md5: 9c83945ff0b0e7c63f3d54bf82f6317e
+      size: 6222115
+    - path: data/raw/resenas_nuevas.csv
+      hash: md5
+      md5: 3365fc44de1da1b89127034c490af2a0
+      size: 194744
+    - path: data/raw/resenas_nuevas_drift.csv
+      hash: md5
+      md5: 49846ba1cfe851020b62b6581c5ba423
+      size: 195743
+    - path: docs/reports/entrenamiento/metricas_modelo.json
+      hash: md5
+      md5: c0904b93f2c2fed0646b0f7799238d09
+      size: 2931
+    - path: models/modelo.joblib
+      hash: md5
+      md5: 1145de874c26872b2c0f27379d0ae00e
+      size: 8851
+    - path: pyproject.toml
+      hash: md5
+      md5: 44dfa13d13700cdd587a33b270bc0324
+      size: 747
+    - path: src/entrenamiento.py
+      hash: md5
+      md5: fbfa625c6b0456e583135f537fcb6732
+      size: 8012
+    - path: src/experimentacion.py
+      hash: md5
+      md5: 33c3fd06b6810d8d1dec3327546686c3
+      size: 9658
+    - path: src/monitoreo_ap2.py
+      hash: md5
+      md5: 5db0e210e4f862758074daf732f7b9a4
+      size: 6038
+    - path: src/monitoreo_drift.py
+      hash: md5
+      md5: a7ade0c13db5820cc3573e26ddeb1893
+      size: 6931
+    - path: uv.lock
+      hash: md5
+      md5: a2e416069b4de906f5037e630aa17054
+      size: 1017248
+    outs:
+    - path: docs/reports/monitoreo
+      hash: md5
+      md5: 7cdaf574eb732b1b8617a38be62bd023.dir
+      size: 12937
+      nfiles: 2
